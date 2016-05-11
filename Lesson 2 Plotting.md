@@ -22,8 +22,8 @@ Lesson 2: Plotting
 
     -   Use annotation functions to add/modify `text, lines, points, axis`
 
-    -   This system is intuitive.  Can’t go back though.  Difficult to translate
-        to others.  Plot is just a series of R commands.
+    -   This system is intuitive. Can’t go back though. Difficult to translate
+        to others. Plot is just a series of R commands.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 library(datasets)
@@ -33,7 +33,7 @@ with(cars, plot(speed, dist))
 
  
 
-2. The Lattice System
+1.  The Lattice System
 
 -   Plots are created with a single function call `xyplot, bwplot, etc`.
 
@@ -61,7 +61,7 @@ xyplot(Life.Exp ~ Income | region, data = state, layout = c(4, 1))
 
  
 
-3. The `ggplot2` System
+1.  The `ggplot2` System
 
 -   meets in the middle of the prior two.
 
@@ -79,7 +79,7 @@ qplot(displ, hwy, data = mpg)
 
 ### Base Plotting System Part 1
 
-All core plotting system is wrapped up in two packages:  `library(graphics)` and
+All core plotting system is wrapped up in two packages: `library(graphics)` and
 `library(grDevices)`
 
  
@@ -114,7 +114,7 @@ The lattice plotting system is called by `library(lattice)` and `library(grid)`
     `bwplot`, and `levelplot`
 
 2.  `grid` implements a different graphics system independent of the base
-    system.  This function is seldom called directly.
+    system. This function is seldom called directly.
 
  
 
@@ -122,7 +122,7 @@ The lattice plotting system is called by `library(lattice)` and `library(grid)`
 
 #### Ask yourself which system do you want/need to use:
 
--   **Base** graphics are usually piecemeal.  Usually simpler and lets the
+-   **Base** graphics are usually piecemeal. Usually simpler and lets the
     plotting process mirror the thought process.
 
 -   **Lattice** graphics are typically a single function call
@@ -137,9 +137,9 @@ Here we focus on the base plotting system to create graphics on the screen.
 
 ### Base Graphics
 
-Two phases:  Initialize, Annotate
+Two phases: Initialize, Annotate
 
-Lots of parameters that can be tweaked.  `?par`
+Lots of parameters that can be tweaked. `?par`
 
  
 
@@ -173,12 +173,12 @@ Important parameters
 
 1.  `pch`: the plotting character. Default is open circle
 
-2.  `lty`: line type.  Default is solid line
+2.  `lty`: line type. Default is solid line
 
 3.  `lwd`: line width
 
-4.  `col`:  plotting color.  Can be number, string or hex code.  Can use
-    `colors()` to produce a vector of colors by name.
+4.  `col`: plotting color. Can be number, string or hex code. Can use `colors()`
+    to produce a vector of colors by name.
 
 5.  `xlab`: x-axis label
 
@@ -192,11 +192,11 @@ Global parameters set in the `par()` function:
 
 3.  `mar`: margin size
 
-4.  `oma`: outer margin size.  Default is 0
+4.  `oma`: outer margin size. Default is 0
 
-5.  `mfrow`: number of plots per row, column.  Plots are filled row-wise
+5.  `mfrow`: number of plots per row, column. Plots are filled row-wise
 
-6.  `mfcol`: number of plots per row, column.  Plots are filled column-wise.
+6.  `mfcol`: number of plots per row, column. Plots are filled column-wise.
 
  
 
@@ -279,4 +279,4 @@ with(airquality, {
 
  
 
- 
+### Base Plotting Demonstration
